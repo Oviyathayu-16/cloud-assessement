@@ -1,28 +1,187 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-  <nav class="bg-black">
-     <u1 class="flex space-x-6">
-        <li>
-            <a href="./index.html" class="text-white">Home</a>
-        </li>
-            <a href="./about.html" class="text-white">About</a>
-        </li>
-        <li>
-             <a href="./contact.html" class="text-white">Contact</a>
-        </li>
-        <li>
-            <a href="./more.html" class="text-white">More</a>
-        </li>
-     </u1>
-  </nav> 
-  <footer class="bg-yellow-500">
-    <h1>this is footer</h1>
-  </footer>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #2a3d66;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        .nav a:hover {
+            color: #f39c12;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about {
+            background-color: #e8f1f8;
+        }
+
+        .skills {
+            background-color: #f9f9f9;
+        }
+
+        .portfolio {
+            background-color: #2a3d66;
+            color: white;
+        }
+
+        .contact {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about p, .contact p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .skills-list, .portfolio-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .skills-list li, .portfolio-list li {
+            background-color: #4e5b6d;
+            color: white;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-list li:hover, .portfolio-list li:hover {
+            background-color: #f39c12;
+            cursor: pointer;
+        }
+
+        .portfolio-list img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2a3d66;
+            color: white;
+            padding: 20px 10px;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav class="nav">
+            <a href="#name">name</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>Oviya</h2>
+        <img src="https://5.imimg.com/data5/ANDROID/Default/2021/7/UX/AW/BK/39958304/132230746-425358982178250-7374844770133219684-n-jpg-500x500.jpg" alt="Profile Picture" class="profile-img">
+        <p>Hi! I'm a web developer passionate about creating beautiful, functional websites. I have a deep love for problem-solving and designing smooth user experiences. I specialize in front-end development and have experience with various web technologies including HTML, CSS, JavaScript, and React.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2>
+        <ul class="portfolio-list">
+            <li>
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <p>Project 1</p>
+            </li>
+            <li>
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <p>Project 2</p>
+            </li>
+            <li>
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <p>Project 3</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work together or just want to say hello, feel free to reach out! You can email me at <strong>example@email.com</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
 </html>
